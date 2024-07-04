@@ -11,7 +11,36 @@
 		8CD50A312C3738EF00D42366 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD50A302C3738EF00D42366 /* ContentView.swift */; };
 		8CD50A332C3738F200D42366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD50A322C3738F200D42366 /* Assets.xcassets */; };
 		8CD50A362C3738F200D42366 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD50A352C3738F200D42366 /* Preview Assets.xcassets */; };
+		8CD50A432C3739A200D42366 /* watchOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD50A422C3739A200D42366 /* watchOSAppApp.swift */; };
+		8CD50A452C3739A200D42366 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD50A442C3739A200D42366 /* ContentView.swift */; };
+		8CD50A472C3739A500D42366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD50A462C3739A500D42366 /* Assets.xcassets */; };
+		8CD50A4A2C3739A500D42366 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD50A492C3739A500D42366 /* Preview Assets.xcassets */; };
+		8CD50A4D2C3739A500D42366 /* watchOSApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CD50A402C3739A100D42366 /* watchOSApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CD50A4B2C3739A500D42366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CD50A232C3738EF00D42366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CD50A3F2C3739A100D42366;
+			remoteInfo = "watchOSApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CD50A512C3739A500D42366 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8CD50A4D2C3739A500D42366 /* watchOSApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8CD50A2B2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KodecoSwiftUICookbookWatchOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +48,22 @@
 		8CD50A302C3738EF00D42366 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CD50A322C3738F200D42366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD50A352C3738F200D42366 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CD50A402C3739A100D42366 /* watchOSApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOSApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD50A422C3739A200D42366 /* watchOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOSAppApp.swift; sourceTree = "<group>"; };
+		8CD50A442C3739A200D42366 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CD50A462C3739A500D42366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CD50A492C3739A500D42366 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8CD50A282C3738EF00D42366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD50A3D2C3739A100D42366 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8CD50A2D2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp */,
+				8CD50A412C3739A200D42366 /* watchOSApp Watch App */,
 				8CD50A2C2C3738EF00D42366 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8CD50A2B2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp.app */,
+				8CD50A402C3739A100D42366 /* watchOSApp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +110,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8CD50A412C3739A200D42366 /* watchOSApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				8CD50A422C3739A200D42366 /* watchOSAppApp.swift */,
+				8CD50A442C3739A200D42366 /* ContentView.swift */,
+				8CD50A462C3739A500D42366 /* Assets.xcassets */,
+				8CD50A482C3739A500D42366 /* Preview Content */,
+			);
+			path = "watchOSApp Watch App";
+			sourceTree = "<group>";
+		};
+		8CD50A482C3739A500D42366 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8CD50A492C3739A500D42366 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,14 +139,33 @@
 				8CD50A272C3738EF00D42366 /* Sources */,
 				8CD50A282C3738EF00D42366 /* Frameworks */,
 				8CD50A292C3738EF00D42366 /* Resources */,
+				8CD50A512C3739A500D42366 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CD50A4C2C3739A500D42366 /* PBXTargetDependency */,
+			);
+			name = KodecoSwiftUICookbookWatchOSApp;
+			productName = KodecoSwiftUICookbookWatchOSApp;
+			productReference = 8CD50A2B2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CD50A3F2C3739A100D42366 /* watchOSApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CD50A4E2C3739A500D42366 /* Build configuration list for PBXNativeTarget "watchOSApp Watch App" */;
+			buildPhases = (
+				8CD50A3C2C3739A100D42366 /* Sources */,
+				8CD50A3D2C3739A100D42366 /* Frameworks */,
+				8CD50A3E2C3739A100D42366 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KodecoSwiftUICookbookWatchOSApp;
-			productName = KodecoSwiftUICookbookWatchOSApp;
-			productReference = 8CD50A2B2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp.app */;
+			name = "watchOSApp Watch App";
+			productName = "watchOSApp Watch App";
+			productReference = 8CD50A402C3739A100D42366 /* watchOSApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +179,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					8CD50A2A2C3738EF00D42366 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8CD50A3F2C3739A100D42366 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				8CD50A2A2C3738EF00D42366 /* KodecoSwiftUICookbookWatchOSApp */,
+				8CD50A3F2C3739A100D42366 /* watchOSApp Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +212,15 @@
 			files = (
 				8CD50A362C3738F200D42366 /* Preview Assets.xcassets in Resources */,
 				8CD50A332C3738F200D42366 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD50A3E2C3739A100D42366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD50A4A2C3739A500D42366 /* Preview Assets.xcassets in Resources */,
+				8CD50A472C3739A500D42366 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +236,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CD50A3C2C3739A100D42366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD50A452C3739A200D42366 /* ContentView.swift in Sources */,
+				8CD50A432C3739A200D42366 /* watchOSAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CD50A4C2C3739A500D42366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CD50A3F2C3739A100D42366 /* watchOSApp Watch App */;
+			targetProxy = 8CD50A4B2C3739A500D42366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8CD50A372C3738F200D42366 /* Debug */ = {
@@ -267,6 +378,7 @@
 		8CD50A3A2C3738F200D42366 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +408,7 @@
 		8CD50A3B2C3738F200D42366 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +435,66 @@
 			};
 			name = Release;
 		};
+		8CD50A4F2C3739A500D42366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchOSApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 86C8SC428C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchOSApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sigabrt.KodecoSwiftUICookbookWatchOSApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigabrt.KodecoSwiftUICookbookWatchOSApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		8CD50A502C3739A500D42366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchOSApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 86C8SC428C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = watchOSApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sigabrt.KodecoSwiftUICookbookWatchOSApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigabrt.KodecoSwiftUICookbookWatchOSApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +512,15 @@
 			buildConfigurations = (
 				8CD50A3A2C3738F200D42366 /* Debug */,
 				8CD50A3B2C3738F200D42366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CD50A4E2C3739A500D42366 /* Build configuration list for PBXNativeTarget "watchOSApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD50A4F2C3739A500D42366 /* Debug */,
+				8CD50A502C3739A500D42366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
